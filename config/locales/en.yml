@@ -20,4 +20,60 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      project_name: "FRAMGIA Training Management System"
+    header:
+      menu_home: " Home"
+      menu_courses: " Courses"
+      menu_notifications: " Notifications"
+      menu_signin: " Sign in"
+      account_profile: "Profile"
+      account_logout: "Sign out"
+      view_all: "View all"
+      time_now: "Just now"
+      message: "Subject: Ruby's Project 2 has started"
+    footer:
+      framgia_slogan: "FROM THE ASIA TO THE WORLD"
+      branch_hn: "Ha Noi (Head office)"
+      address_hn: "13F Keangnam Landmark 72 Tower, Plot E6, Pham Hung Road,
+        Nam Tu Liem District., Ha Noi"
+      branch_laboratory: "Laboratory"
+      address_laboratory: "9F HTP Building, 434 Tran Khat Chan,
+        1km from Bach Khoa University, Ha Noi"
+      branch_hcm: "Ho Chi Minh"
+      address_hcm: "8F Nice building, 467 Dien Bien Phu Str.,
+        Ward 25, Binh Thanh district, HCMC"
+      branch_dn: "Da Nang"
+      address_dn: "6F, Vinh Trung Plaza, 255~257 Hung Vuong Str.,
+        Vinh Trung ward, Thanh Khe district, Da Nang"
+      project_name: "FRAMGIA Training Management System"
+      designed_by: "Designed by "
+      designer: "THQ"
+  static_pages:
+    index:
+      hello: "Hello world!"
+      slide_title: "ARE YOU READY TO MAKE IT AWESOME WITH US?"
+      slide_content: We’re on a mission to be the IT infra for software
+        development. IT has the power to create the future where all our kids
+        have the equal opportunity no matter where they are born.
+        We will utilize the power and determine the future
+        by reinventing groundbreaking services ceaselessly.
+      training_principles: "Our Training Principles"
+      principles_description: "We want to work with the most dedicated startup
+        engineers and designers.We want to help you become the best you can be,
+        alongside talented peers."
+      real_tutorials: "Real Tutorials"
+      real_tutorials_description: "We'll learn how apps like Facebook,
+        Instagram, and Twitter are built."
+      projects: "Projects"
+      projects_description: "You'll build real apps you'll be proud to
+        show to customers and employers."
+      completed_courses: "Completed Courses"
+      trainees: "Trainees"
+      trainers: "Trainers"
+      count_number: "125"
+      about: "About Us"
+      about_description: "Framgia Vietnam is a company 100% Japan funded
+        specializing in design, development applications such as mobile phone
+        software, games, social and website applications."
