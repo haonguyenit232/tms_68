@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :subjects, through: :user_subjects
 
   enum role: {trainee: 0, supervisor: 1, admin: 2}
+  mount_uploader :avatar_url, AvatarUrlUploader
 
   validates :name, presence: true, length: {maximum: 50}
 

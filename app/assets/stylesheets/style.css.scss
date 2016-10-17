@@ -171,6 +171,8 @@ body > section {
   font-weight: 600;
   padding: 25px 5px;
   text-transform: uppercase;
+  max-width: 100px;
+  max-height: 100px;
 }
 .navigation .navbar-nav > li > a:focus,
 .navigation .navbar-nav > li > a:hover {
