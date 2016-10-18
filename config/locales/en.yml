@@ -12,6 +12,7 @@ en:
     header:
       menu_home: "Home"
       menu_courses: "Courses"
+      menu_subjects: "Subjects"
       menu_notifications: "Notifications"
       menu_signin: "Sign in"
       account_profile: "Profile"
@@ -92,6 +93,27 @@ en:
         course_pending: "success"
         course_started: "primary"
         course_finished: "info"
+    subjects:
+      create_success: "Subject has been created success"
+      update_success: "Subject has been updated success"
+      subject_not_found: "Subject has been not found!!!"
+      task_quanlity_error: "has must task"
+      new:
+        title: "Create Subject"
+        btn_create: "Create"
+      edit:
+        title: "Update Subject"
+        btn_update: "Update"
+      form:
+        add_task: "Add task"
+        title: "Create Subject"
+        subject_name_placeholder: "Type name of Subject in here..."
+        subject_description_placeholder:
+          "Type description for Subject in here..."
+      task_fields:
+        task_name_placeholder: "Type name of task in here..."
+        task_description_placeholder: "Type description for task in here..."
+        remove: "Remove"
   title: "Framgia Training Management System"
   edit_profile: "Edit Profile"
   edit_anything: "Edit %{name}"
@@ -105,3 +127,5 @@ en:
   data_confirm: "Are you sure?"
   back: "Back"
   login: "Log in"
+  error_content: "The form contains"
+  error: "Error"
