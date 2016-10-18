@@ -7,4 +7,8 @@ module ApplicationHelper
       page_title + " | " + base_title
     end
   end
+
+  def title_header page_header = ""
+    page_header
+  end
 end

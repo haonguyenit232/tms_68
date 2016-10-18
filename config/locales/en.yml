@@ -1,4 +1,11 @@
 en:
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+  message:
+    permission_denied: "Permission Denied!"
   layouts:
     application:
       project_name: "FRAMGIA Training Management System"
@@ -36,6 +43,8 @@ en:
       menu_courses: "Courses"
       menu_subjects: "Subjects"
       menu_users: "Users"
+      account_profile: "Profile"
+      account_logout: "Sign out"
   static_pages:
     index:
       hello: "Hello world!"
@@ -64,6 +73,9 @@ en:
         specializing in design, development applications such as mobile phone
         software, games, social and website applications."
   admin:
+    shared:
+      title_page:
+        courses: "Courses"
     static_pages:
       index:
         menu_courses: "Courses"
@@ -71,6 +83,15 @@ en:
         menu_users: "Users"
         count_number: "125"
         go_here: "Go here"
+    courses:
+      index:
+        course_name: "Course Name"
+        start_date: "Start Date"
+        end_date: "End Date"
+        status: "Status"
+        course_pending: "success"
+        course_started: "primary"
+        course_finished: "info"
   title: "Framgia Training Management System"
   edit_profile: "Edit Profile"
   edit_anything: "Edit %{name}"

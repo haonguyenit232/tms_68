@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20161017011352) do
 
-  create_table "activities", force: :cascade do |t|
+  create_table "activities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "content"
     t.integer  "target_type"
     t.integer  "target_id"
@@ -20,30 +20,30 @@ ActiveRecord::Schema.define(version: 20161017011352) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["user_id"], name: "index_activities_on_user_id"
+    t.index ["user_id"], name: "index_activities_on_user_id", using: :btree
   end
 
-  create_table "course_subjects", force: :cascade do |t|
+  create_table "course_subjects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "course_id"
     t.integer  "subject_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["course_id"], name: "index_course_subjects_on_course_id"
-    t.index ["subject_id"], name: "index_course_subjects_on_subject_id"
+    t.index ["course_id"], name: "index_course_subjects_on_course_id", using: :btree
+    t.index ["subject_id"], name: "index_course_subjects_on_subject_id", using: :btree
   end
 
-  create_table "courses", force: :cascade do |t|
+  create_table "courses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "description"
-    t.datetime "start_date"
-    t.datetime "end_date"
+    t.date     "start_date"
+    t.date     "end_date"
     t.integer  "status",      default: 0
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
     t.string   "image_url"
   end
 
-  create_table "subjects", force: :cascade do |t|
+  create_table "subjects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "description"
     t.datetime "created_at",  null: false
@@ -51,26 +51,26 @@ ActiveRecord::Schema.define(version: 20161017011352) do
     t.string   "image_url"
   end
 
-  create_table "tasks", force: :cascade do |t|
+  create_table "tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "subject_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["subject_id"], name: "index_tasks_on_subject_id"
+    t.index ["subject_id"], name: "index_tasks_on_subject_id", using: :btree
   end
 
-  create_table "user_courses", force: :cascade do |t|
+  create_table "user_courses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.boolean  "is_active",  default: false
     t.integer  "course_id"
     t.integer  "user_id"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
-    t.index ["course_id"], name: "index_user_courses_on_course_id"
-    t.index ["user_id"], name: "index_user_courses_on_user_id"
+    t.index ["course_id"], name: "index_user_courses_on_course_id", using: :btree
+    t.index ["user_id"], name: "index_user_courses_on_user_id", using: :btree
   end
 
-  create_table "user_subjects", force: :cascade do |t|
+  create_table "user_subjects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "start_date"
     t.datetime "end_date"
     t.integer  "status",         default: 0
@@ -79,21 +79,23 @@ ActiveRecord::Schema.define(version: 20161017011352) do
     t.integer  "user_id"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
-    t.index ["subject_id"], name: "index_user_subjects_on_subject_id"
-    t.index ["user_id"], name: "index_user_subjects_on_user_id"
+    t.index ["subject_id"], name: "index_user_subjects_on_subject_id", using: :btree
+    t.index ["user_course_id"], name: "fk_rails_1d8bbc83b5", using: :btree
+    t.index ["user_id"], name: "index_user_subjects_on_user_id", using: :btree
   end
 
-  create_table "user_tasks", force: :cascade do |t|
+  create_table "user_tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "task_id"
     t.integer  "user_id"
     t.integer  "user_subject_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.index ["user_id"], name: "index_user_tasks_on_user_id"
-    t.index ["user_subject_id"], name: "index_user_tasks_on_user_subject_id"
+    t.index ["task_id"], name: "fk_rails_5a3f03c742", using: :btree
+    t.index ["user_id"], name: "index_user_tasks_on_user_id", using: :btree
+    t.index ["user_subject_id"], name: "index_user_tasks_on_user_subject_id", using: :btree
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "email",                  default: "", null: false
     t.string   "avatar_url"
@@ -109,8 +111,20 @@ ActiveRecord::Schema.define(version: 20161017011352) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "activities", "users"
+  add_foreign_key "course_subjects", "courses"
+  add_foreign_key "course_subjects", "subjects"
+  add_foreign_key "tasks", "subjects"
+  add_foreign_key "user_courses", "courses"
+  add_foreign_key "user_courses", "users"
+  add_foreign_key "user_subjects", "subjects"
+  add_foreign_key "user_subjects", "user_courses"
+  add_foreign_key "user_subjects", "users"
+  add_foreign_key "user_tasks", "tasks"
+  add_foreign_key "user_tasks", "user_subjects"
+  add_foreign_key "user_tasks", "users"
 end
