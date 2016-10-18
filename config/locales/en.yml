@@ -24,10 +24,10 @@ en:
     application:
       project_name: "FRAMGIA Training Management System"
     header:
-      menu_home: " Home"
-      menu_courses: " Courses"
-      menu_notifications: " Notifications"
-      menu_signin: " Sign in"
+      menu_home: "Home"
+      menu_courses: "Courses"
+      menu_notifications: "Notifications"
+      menu_signin: "Sign in"
       account_profile: "Profile"
       account_logout: "Sign out"
       view_all: "View all"
@@ -50,6 +50,13 @@ en:
       project_name: "FRAMGIA Training Management System"
       designed_by: "Designed by "
       designer: "THQ"
+    admin_application:
+      project_name: "FRAMGIA Training Management System"
+    admin_header:
+      menu_home: "Home"
+      menu_courses: "Courses"
+      menu_subjects: "Subjects"
+      menu_users: "Users"
   static_pages:
     index:
       hello: "Hello world!"
@@ -77,3 +84,11 @@ en:
       about_description: "Framgia Vietnam is a company 100% Japan funded
         specializing in design, development applications such as mobile phone
         software, games, social and website applications."
+  admin:
+    static_pages:
+      index:
+        menu_courses: "Courses"
+        menu_subjects: "Subjects"
+        menu_users: "Users"
+        count_number: "125"
+        go_here: "Go here"
