@@ -14,15 +14,16 @@ gem "coffee-rails", "~> 4.2"
 gem "jquery-rails"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
+gem "config"
 gem "devise"
 gem "cancancan", "1.10"
+gem "carrierwave"
 
 group :development, :test do
   gem "byebug", platform: :mri
 end
 
 group :development do
-  gem "sqlite3"
   gem "web-console"
   gem "listen", "~> 3.0.5"
   gem "spring"
