@@ -127,5 +127,20 @@ en:
   data_confirm: "Are you sure?"
   back: "Back"
   login: "Log in"
+<<<<<<< HEAD
   error_content: "The form contains"
   error: "Error"
+  course:
+    title_show_course: "Course"
+    view_list: "List"
+    view_grid: "Grid"
+    link_new: "Pending"
+    link_started: "Started"
+    link_all: "All"
+    link_finished: "Finished"
+    success: "success"
+    primary: "primary"
+    info: "info"
+  time:
+    formats:
+      short: "%B, %d %Y"
