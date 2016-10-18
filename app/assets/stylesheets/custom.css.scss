@@ -22,6 +22,14 @@
   margin: 10px 0 0;
   min-height: 12px;
 }
+.title-form {
+  font-size: 35px;
+  color: rgb(104, 145, 162);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  min-height: 12px;
+}
 .login-section {
   background: image-url('bg3.png') !important;
   padding-top: 190px;
@@ -148,4 +156,7 @@
 #status {
   position: absolute;
   top: 50px;
+}
+.margin-bottom-10 {
+  margin-bottom: 10px;
 }

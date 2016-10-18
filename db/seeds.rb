@@ -12,4 +12,27 @@ User.create! name: "Admin", email: "admin@gmail.com", password: "123456",
   end_date = "2016-12-17"
   Course.create name: name, description: description, start_date: start_date,
     end_date: end_date
+
+10.times do |n|
+  name  = Faker::Name.name
+  email = "trainee-#{n+1}@trainee.com"
+  password = "123456"
+  User.create!(name:  name, email: email, password: password,
+    password_confirmation: password, role: 0)
+end
+
+5.times do |n|
+  name  = Faker::Name.name
+  email = "supervisor-#{n+1}@super.com"
+  password = "123456"
+  User.create!(name:  name, email: email, password: password,
+    password_confirmation: password, role: 1)
+end
+
+3.times do |n|
+  name  = Faker::Name.name
+  email = "admin-#{n+1}@admin.com"
+  password = "123456"
+  User.create!(name:  name, email: email, password: password,
+    password_confirmation: password, role: 2)
 end

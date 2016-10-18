@@ -7,3 +7,5 @@ params_started: "started"
 params_finished: "finished"
 status_pending: "pending"
 status_started: "started"
+pagination:
+  per_page: 15

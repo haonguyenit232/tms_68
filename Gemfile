@@ -20,6 +20,8 @@ gem "config"
 gem "devise"
 gem "cancancan", "1.10"
 gem "carrierwave"
+gem "kaminari"
+gem "bootstrap-kaminari-views"
 
 group :development, :test do
   gem "byebug", platform: :mri
