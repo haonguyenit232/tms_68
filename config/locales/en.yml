@@ -133,6 +133,38 @@ en:
         task_name_placeholder: "Type name of task in here..."
         task_description_placeholder: "Type description for task in here..."
         remove: "Remove"
+      subject:
+        view: "View"
+        edit: "Edit"
+        delete: "Delete"
+        confirm_delete: "Are you sure delete this Subject?"
+        confirm_delete_association:
+          "This Subject has been belong to some course, are you sure delete?"
+      index:
+        title: "Manage Subjects"
+        subjects: "Subjects"
+        btn_create: "New Subject"
+        view: "View"
+        edit: "Edit"
+        delete: "Delete"
+        create_at: "Time created"
+        description: "Desciption"
+        name: "Name"
+      show:
+        title: "Subject Detail"
+        edit: "Edit"
+        delete: "Delete"
+        delete_confirm: "Are you sure delete this Subject?"
+        description: "Description"
+        list_tasks: "List Tasks"
+        confirm_delete: "Are you sure delete this Subject?"
+        confirm_delete_association:
+          "This Subject has been belong to some course, are you sure delete?"
+      destroy:
+        delete_success: "Subject has been delete success"
+        delete_fail: "Cannot delete this Subject!!!"
+        cannot_delete:
+          "This Subject belong to Course inprogress, cannot delete!!!"
     users:
       index:
         name: "Name"
@@ -142,6 +174,11 @@ en:
         action: "Action"
         btn_create: "New User"
         title: "Manage Users"
+        view: "View"
+        edit: "Edit"
+        delete: "Delete"
+        delete_success: "User has been delete success"
+        delete_fail: "Cannot delete this user!!!"
       user:
         edit: "Edit"
         view: "View"
@@ -149,17 +186,19 @@ en:
         role_trainee: "info"
         role_supervisor: "warning"
         role_admin: "danger"
-        delete_success: "User has been delete success"
-        delete_fail: "Cannot delete this user!!!"
         user_not_found: "Not found this user!!!"
         confirm_delete: "Are you sure delete this User?"
-        update_success: "User has been update success"
+      destroy:
+        delete_success: "User has been delete success"
+        delete_fail: "Cannot delete this user!!!"
       new:
         title: "Create User"
         btn_create: "Create"
       edit:
         title: "Update User"
         btn_update: "Update"
+      update:
+        update_success: "User has been update success"
   title: "Framgia Training Management System"
   edit_profile: "Edit Profile"
   edit_anything: "Edit %{name}"

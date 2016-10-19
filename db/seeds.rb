@@ -12,6 +12,7 @@ User.create! name: "Admin", email: "admin@gmail.com", password: "123456",
   end_date = "2016-12-17"
   Course.create name: name, description: description, start_date: start_date,
     end_date: end_date
+end
 
 10.times do |n|
   name  = Faker::Name.name

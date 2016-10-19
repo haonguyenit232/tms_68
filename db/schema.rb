@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161017011352) do
+ActiveRecord::Schema.define(version: 20161021064642) do
 
   create_table "activities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "content"
@@ -49,6 +49,8 @@ ActiveRecord::Schema.define(version: 20161017011352) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "image_url"
+    t.datetime "deleted_at"
+    t.index ["deleted_at"], name: "index_subjects_on_deleted_at", using: :btree
   end
 
   create_table "tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

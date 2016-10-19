@@ -1,8 +1,15 @@
 class Admin::SubjectsController < ApplicationController
+  layout "admin_application"
   before_action :authenticate_user!
-  before_action :verify_admin
+  before_action :verify_admin_only
   load_and_authorize_resource
-  before_action :load_subject, except: [:index, :new, :create]
+
+  def index
+  end
+
+  def show
+    @tasks = @subject.tasks
+  end
 
   def new
     @subject = Subject.new
@@ -13,7 +20,7 @@ class Admin::SubjectsController < ApplicationController
     @subject = Subject.new subject_params
     if @subject.save
       flash[:success] = t "admin.subjects.create_success"
-      redirect_to admin_root_path
+      redirect_to admin_subject_path @subject
     else
       render :new
     end
@@ -25,23 +32,28 @@ class Admin::SubjectsController < ApplicationController
   def update
     if @subject.update_attributes subject_params
       flash[:success] = t "admin.subjects.update_success"
-      redirect_to admin_root_path
+      redirect_to admin_subject_path @subject
     else
       render :edit
     end
   end
 
-  private
-  def subject_params
-    params.require(:subject).permit :name, :description,
-      tasks_attributes: [:id, :name, :description, :_destroy]
+  def destroy
+    if is_inprogess?
+      flash[:danger] = t ".cannot_delete"
+    else
+      if @subject.destroy
+        flash[:success] = t ".delete_success"
+      else
+        flash[:danger] = t ".delete_fail"
+      end
+    end
+    redirect_to admin_subjects_path
   end
 
-  def load_subject
-    @subject = Subject.find_by id: params[:id]
-    unless @subject
-      flash[:danger] = t "admin.subjects.subject_not_found"
-      redirect_to admin_root_path
-    end
+  private
+  def subject_params
+    params.require(:subject).permit :name, :description, :image_url,
+      tasks_attributes: [:id, :name, :description, :_destroy]
   end
 end

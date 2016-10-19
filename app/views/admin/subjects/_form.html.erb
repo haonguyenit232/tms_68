@@ -16,6 +16,10 @@
       <%= f.text_area :description, class: "form-control",
         placeholder: t(".subject_description_placeholder") %>
     </div>
+    <div class="row col-md-10 form-group">
+      <%= f.label :image %>
+      <%= f.file_field :image_url, class: "form-control" %>
+    </div>
   </div>
   <div id ="tasks_field" class="col-md-12">
     <%= f.fields_for :tasks do |task| %>

@@ -24,4 +24,11 @@ class ApplicationController < ActionController::Base
       redirect_to root_url
     end
   end
+
+  def verify_admin_only
+    unless current_user.admin?
+      flash[:warning] = t "message.permission_denied"
+      redirect_to root_url
+    end
+  end
 end
