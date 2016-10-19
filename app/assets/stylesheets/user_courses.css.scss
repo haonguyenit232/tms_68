@@ -1,0 +1,108 @@
+.padding-0 {
+  padding: 0;
+}
+.top-20 {
+  margin-top: 20px;
+}
+.box-v7 {
+  color:#747373;
+}
+.box-v7 .box-v7-avatar{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.panel {
+  border: medium none;
+  border-radius: 0;
+  padding: 0;
+  margin: 20px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+.box-v7 .box-v7-header {
+  padding: 10px;
+  h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  p {
+    line-height: 1px;
+  }
+}
+.btn-custom {
+  -webkit-border-radius: 1px !important;
+  -moz-border-radius: 1px !important;
+  -ms-border-radius: 1px !important;
+  -o-border-radius: 1px !important;
+  border-radius: 1px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff;
+  color: #857E7E;
+  border: 2px solid #000;
+  position: relative;
+}
+.custom-row {
+  background: #f4f4f4;
+}
+.reactions-box {
+  height: 45px;
+  width: auto;
+  padding: 10px;
+  position: absolute;
+  top: -8px;
+  left: 60px;
+  box-shadow: 1px 1px 2px #cccccc, -1px 0px 2px #eeeeee;
+  border-radius: 44px 44px;
+  display: none;
+  background: #ffffff;
+}
+.reaction-item {
+  list-style-type: none;
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.member-item {
+  height: 25px !important;
+  width: 25px !important;
+}
+.box-v7-body p {
+  height: 50px;
+  overflow: hidden;
+}
+.more-items {
+  background: black;
+  color: white;
+  height: 25px !important;
+  width: 25px !important;
+  margin-right: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: auto;
+}
+.label-primary {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: 1px solid #1c84c6 !important;
+  color: #1c84c6 !important;
+}
+.label-success {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: 1px solid #27c24c !important;
+  color: #27c24c !important;
+}
+.label-primary {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: 1px solid #73caef !important;
+  color: #73caef !important;
+}
+.label-outline:hover {
+  background: none !important;
+  color: #918C8C !important;
+  border: 1px solid #918C8C !important;
+}

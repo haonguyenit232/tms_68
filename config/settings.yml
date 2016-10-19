@@ -1,3 +1,9 @@
 course_pending: "pending"
 course_started: "started"
 task_quanlity: 1
+params_all: "all"
+params_pending: "pending"
+params_started: "started"
+params_finished: "finished"
+status_pending: "pending"
+status_started: "started"

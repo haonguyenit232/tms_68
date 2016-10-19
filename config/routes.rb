@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
   root "static_pages#index"
   devise_for :users
+
+  resources :user_courses
 end
