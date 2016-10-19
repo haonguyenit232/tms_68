@@ -175,3 +175,10 @@ en:
     success: "success"
     primary: "primary"
     info: "info"
+    title_subject: "All Subject"
+  time:
+    formats:
+      short: "%B, %d %Y"
+  subject:
+    member: "Member: "
+    date: "date: "

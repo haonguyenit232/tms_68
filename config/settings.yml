@@ -12,3 +12,4 @@ pagination:
 message_notice: "notice"
 message_alert: "alert"
 message_danger: "danger"
+  per_page_member: 5
