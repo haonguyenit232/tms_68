@@ -2,9 +2,6 @@
   <div class="card card-container">
     <%= image_tag "avatar.png", class: "profile-img-card", id: "profile-img" %>
     <p id="profile-name" class="profile-name-card"></p>
-    <% flash.each do |message_type, message| %>
-      <%= content_tag :div, message, class: "alert alert-#{message_type}" %>
-    <% end %>
     <h2 class="title-name">
       <%= t "login", name: resource_name.to_s.humanize %>
     </h2>
