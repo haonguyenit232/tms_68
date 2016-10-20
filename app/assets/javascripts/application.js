@@ -17,6 +17,8 @@
 //= require bootstrap
 //= require wow
 //= require turbolinks
+//= require moment
+//= require daterangepicker
 //= require_tree .
 //= require owl.carousel
 //= require growl

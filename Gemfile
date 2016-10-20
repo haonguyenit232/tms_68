@@ -23,6 +23,8 @@ gem "cancancan", "1.10"
 gem "carrierwave"
 gem "kaminari"
 gem "bootstrap-kaminari-views"
+gem "momentjs-rails"
+gem "bootstrap-daterangepicker-rails"
 
 group :development, :test do
   gem "byebug", platform: :mri
