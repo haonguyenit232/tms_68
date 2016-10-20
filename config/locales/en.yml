@@ -26,6 +26,7 @@ en:
       view_all: "View all"
       time_now: "Just now"
       message: "Subject: Ruby's Project 2 has started"
+      admin_section: "Admin Section"
     footer:
       framgia_slogan: "FROM THE ASIA TO THE WORLD"
       branch_hn: "Ha Noi (Head office)"
@@ -52,6 +53,7 @@ en:
       menu_users: "Users"
       account_profile: "Profile"
       account_logout: "Sign out"
+      trainee_section: "Trainee Section"
   static_pages:
     index:
       hello: "Hello world!"

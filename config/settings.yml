@@ -9,3 +9,6 @@ status_pending: "pending"
 status_started: "started"
 pagination:
   per_page: 15
+message_notice: "notice"
+message_alert: "alert"
+message_danger: "danger"

@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
 
   def verify_admin
     if current_user.trainee?
-      flash[:notice] = t "permission_denied"
+      flash[:danger] = t "message.permission_denied"
       redirect_to root_url
     end
   end
