@@ -190,3 +190,11 @@ en:
   subject:
     member: "Member: "
     date: "date: "
+    text_new: "New Subject: "
+    text_started: "Started Subject: "
+    text_finished: "Finished Subject: "
+    title_show_subject: "All Subject"
+    pending: "pending"
+    started: "started"
+  task:
+    title_show_task: "All Task"
