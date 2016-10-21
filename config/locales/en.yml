@@ -82,9 +82,6 @@ en:
         specializing in design, development applications such as mobile phone
         software, games, social and website applications."
   admin:
-    shared:
-      title_page:
-        courses: "Courses"
     static_pages:
       index:
         menu_courses: "Courses"
@@ -93,7 +90,11 @@ en:
         count_number: "125"
         go_here: "Go here"
     courses:
+      action_success: "Done!"
+      subject_quanlity_error: "At least 1 subject!!!"
       index:
+        title: "Manage Courses"
+        title_header: "List Courses"
         course_name: "Course Name"
         start_date: "Start Date"
         end_date: "End Date"
@@ -101,6 +102,16 @@ en:
         course_pending: "success"
         course_started: "primary"
         course_finished: "info"
+        add_new_button: "Create New Course"
+      new:
+        title: "New Course"
+        title_header: "Add Course"
+      form_course:
+        range_date: "Range date"
+        subjects: "Subjects"
+        subject_name: "Subject Name"
+        create_button: "Create"
+
     subjects:
       create_success: "Subject has been created success"
       update_success: "Subject has been updated success"
@@ -176,9 +187,6 @@ en:
     primary: "primary"
     info: "info"
     title_subject: "All Subject"
-  time:
-    formats:
-      short: "%B, %d %Y"
   subject:
     member: "Member: "
     date: "date: "

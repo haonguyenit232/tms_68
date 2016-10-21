@@ -9,7 +9,9 @@ status_pending: "pending"
 status_started: "started"
 pagination:
   per_page: 15
+  per_page_member: 5
+message_success: "success"
 message_notice: "notice"
 message_alert: "alert"
 message_danger: "danger"
-  per_page_member: 5
+course_subject_quanlity: 1

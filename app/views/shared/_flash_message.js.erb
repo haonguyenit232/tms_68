@@ -4,6 +4,10 @@
     <script>
       $.growl.notice({title: "", message: "<%= value %>"});
     </script>
+  <% when Settings.message_success %>
+    <script>
+      $.growl.notice({title: "", message: "<%= value %>"});
+    </script>
   <% when Settings.message_alert %>
     <script>
       $.growl.error({title: "", message: "<%= value %>"});

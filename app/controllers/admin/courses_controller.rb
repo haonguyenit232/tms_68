@@ -6,4 +6,25 @@ class Admin::CoursesController < ApplicationController
 
   def index
   end
+
+  def new
+    @course.build_course_subjects
+  end
+
+  def create
+    @course = Course.new course_params
+    if @course.save
+      flash[:success] = t "admin.courses.action_success"
+      redirect_to admin_courses_path
+    else
+      @course.build_course_subjects
+      render :new
+    end
+  end
+
+  private
+  def course_params
+    params.require(:course).permit :name, :description, :start_date, :end_date,
+      course_subjects_attributes: [:id, :subject_id, :_destroy]
+  end
 end
