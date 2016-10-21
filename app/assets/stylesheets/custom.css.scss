@@ -159,3 +159,76 @@
 .margin-bottom-10 {
   margin-bottom: 10px;
 }
+
+.admin-show-section {
+  background: #F6F8F8;
+  padding-top: 155px;
+  font-size: 100%;
+}
+
+#subject-show .box-divider {
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+#subject-show .box-divider .label-title {
+  color: #257C94;
+  font-size: 150%;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.box-divider > p {
+  margin: 0 0 10px;
+}
+.subject-task {
+  background-color: white;
+  padding: 10px;
+}
+#subject-show .subject-task .overview {
+  font-size: 120%;
+  color: #5cb85c;
+  margin-bottom: 15px;
+  letter-spacing: 0.05px;
+  font-weight: 600;
+}
+#subject-show .subject-task-list .td-image {
+  width: 50px;
+  height: 85px;
+}
+.img-task {
+  width: 40px;
+  height: 40px;
+}
+#subject-show .subject-task .task-name {
+  font-size: 125%;
+}
+#subject-show .subject-task .task-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.task-description > p {
+  margin: 10px 0;
+}
+#subject-show .subject-image {
+  padding-left: 5px;
+  padding-right: 0px;
+}
+.img-subject {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #d2d6de;
+}
+.img-circle {
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.margin-15 {
+  margin: 15px 0;
+}
+.subject-header {
+  padding-left: 10px;
+  padding-right: 10px;
+}

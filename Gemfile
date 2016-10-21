@@ -25,6 +25,7 @@ gem "kaminari"
 gem "bootstrap-kaminari-views"
 gem "momentjs-rails"
 gem "bootstrap-daterangepicker-rails"
+gem "paranoia", "~> 2.2.0.pre"
 
 group :development, :test do
   gem "byebug", platform: :mri
