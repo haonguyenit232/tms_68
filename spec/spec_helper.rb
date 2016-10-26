@@ -18,6 +18,8 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   require "capybara/rspec"
+  require "factory_girl_rails"
+  require "database_cleaner"
   require "simplecov"
   SimpleCov.start
   # rspec-expectations config goes here. You can use an alternate
