@@ -27,6 +27,16 @@ gem "momentjs-rails"
 gem "bootstrap-daterangepicker-rails"
 gem "paranoia", "~> 2.2.0.pre"
 
+group :test do
+  gem "rspec-rails", "~> 3.5.0"
+  gem "factory_girl_rails"
+  gem "shoulda-matchers", "~> 3.0", require: false
+  gem "database_cleaner", "~> 1.5"
+  gem "simplecov", require: false
+  gem "rspec-collection_matchers"
+  gem "capybara"
+end
+
 group :development, :test do
   gem "byebug", platform: :mri
 end
