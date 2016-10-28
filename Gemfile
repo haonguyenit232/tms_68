@@ -35,6 +35,7 @@ group :test do
   gem "simplecov", require: false
   gem "rspec-collection_matchers"
   gem "capybara"
+  gem "rails-controller-testing"
 end
 
 group :development, :test do
