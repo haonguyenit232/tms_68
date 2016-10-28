@@ -39,10 +39,10 @@ end
 
 group :development, :test do
   gem "byebug", platform: :mri
+  gem "pry"
 end
 
 group :development do
-  gem "pry"
   gem "web-console"
   gem "listen", "~> 3.0.5"
   gem "spring"
